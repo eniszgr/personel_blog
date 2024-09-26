@@ -1,4 +1,86 @@
-.content{
-    
-  
+.info {
+    width: 100%;
+    height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.info .wrapper {
+    display: flex;
+    width: 70%;
+    height: 60%;
+    background-color: #D1E9F6;
+    border-radius: 30px;
+    max-width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden; /* Taşmayı engelle */
+}
+
+.info .wrapper .card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.info .wrapper .card .left {
+    flex: 3.5;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.info .wrapper .card .left .media {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.info .wrapper .card .left .media img{
+    border-radius: 50%;
+    width: 70%;
+    padding: 20px;
+    margin: 10px 0 ;
+    
+    
+}
+.info .wrapper .card .left .personalinfo {
+  
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+.info .wrapper .card .right {
+    flex: 6;
+    background-color: #D1E9F6;
+    padding:0 25px;
+}
+.info .wrapper .card .right p , .info .wrapper .card .right h2 {
+    text-indent: 20px; /* İlk satırı 20px içeride yapar */
+}
+.info .wrapper .card .right h2 {
+    font-size: 1.2rem;
+    font-family: "Fredoka", sans-serif;
+    margin-top: 20px;
+}
+.info .wrapper .card .right ul {
+    margin-top: 10px;
+    line-height: 1.5;
+    text-indent: 20px;
+
+}
+.info .wrapper .card .right ul li::before{
+    content: "✦"; 
+}
+

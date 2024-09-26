@@ -84,3 +84,22 @@
     content: "✦"; 
 }
 
+@media (max-width: 935px) {
+   
+    .info .wrapper .card .left .personalinfo  {
+       font-size: 13px;
+       padding-top:30px ;
+    }
+
+    .info .wrapper .card .right h2 {
+        font-size: 1rem; /* Başlık fontunu küçült */
+    }
+
+    .info .wrapper .card .right p {
+        font-size: 0.9rem; /* Paragraf fontunu küçült */
+    }
+
+    .info .wrapper .card .right ul {
+        font-size: 0.9rem; /* Liste fontunu küçült */
+    }
+}

@@ -9,7 +9,7 @@
 .projects .wrapper {
     display: flex;
     flex-direction: column; /* Satır yönünü dikey yap */
-    height: 70%;
+    height: 85%;
     width: 70%;
     padding: 10px;
     border-radius: 10px;
@@ -38,6 +38,13 @@
 .projects .wrapper .up .photo img {
     width: 35%;
     border-radius: 50%;
+    transition: all 0.5s;
+
+}
+.projects .wrapper .up .photo img:hover{
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .projects .wrapper .up .profilecontent {
@@ -64,7 +71,7 @@
 }
 
 #githubicon {
-    width: 66%;
+    width: 50%;
 }
 
 .projects .wrapper .down {
@@ -102,8 +109,6 @@
 }
 #githubinfo h3{
     font-family: "Gowun Batang", serif;
-    
-   
 }
 
 #githubvideo {
@@ -117,15 +122,84 @@
 
 
 
-
-
-
-
-
-
 .projects .wrapper .down .right{
     flex: 8;
-    background-color: beige;
     margin-left: 20px;
-      
+    display: flex;
+    flex-direction: column;
+    
   }
+  .projects .wrapper .down .right .post {
+    border-radius: 15px;
+    height: 33.3%;
+    width: 100%;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    display: flex;
+    
+  }
+  
+  .projects .wrapper .down .right .post:last-child {
+    display: flex;
+    bottom: 0px;
+    margin-bottom: 0; 
+  }
+  
+  .projects .wrapper .down .right .post :first-child{
+    display: flex;
+  }
+ .post .postleft{
+    padding: 10px;
+    flex: 4;
+    background-color: rgb(183, 202, 219);
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   align-items: center;
+   font-size: 17px;
+   font-family: "Roboto Slab", serif;
+   
+ }
+ .post .postright{
+    padding: 10px;
+    flex: 8;
+
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 12px;
+ }
+
+
+ .post .postright a {
+    display: inline-block; 
+    text-decoration: none; 
+    color: white; 
+    background-color: #6cbbef;
+    padding: 3px 5px; 
+    border-radius: 5px; 
+    font-size: 10px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    margin-top: 3px; 
+    width: 100%; 
+    text-align: center; 
+  }
+  
+  .post .postright a:hover {
+    background-color: #2980b9; 
+    transform: translateY(-2px); 
+  }
+  
+  .post .postright a:active {
+    transform: translateY(0px); 
+  }
+  
+  .post .postright a:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7); 
+  }
+  

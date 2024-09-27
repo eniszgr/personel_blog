@@ -1,5 +1,6 @@
 /* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fredoka:wght@300&family=Playfair+Display:wght@664&family=Roboto+Slab:wght@100..900&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 
 /* FONT USAGE */
 
@@ -41,3 +42,9 @@
     font-weight: 500;
     font-style: bold;
   }
+  .gowun-batang-regular {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

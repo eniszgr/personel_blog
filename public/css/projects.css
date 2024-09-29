@@ -112,7 +112,7 @@
 }
 
 #githubvideo {
-    padding: 10px;
+    padding-right: 12px;
     width: 90%;
     position: absolute;
     display: flex;

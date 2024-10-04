@@ -32,6 +32,7 @@ ul{
 @media (min-width: 320px) and (max-width: 480px) {
     body{
      height: 1000px; 
+     margin-top: 90px;
     }
     
   

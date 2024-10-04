@@ -44,6 +44,7 @@ footer .right .up i,footer .right .down i{
 }
 
 @media (max-width: 480px) {
+    body{height: 1500px;}
     footer {
         position: relative; /* Sayfa içeriğine göre konumlandır */
         background-color: #201E43;
@@ -53,7 +54,7 @@ footer .right .up i,footer .right .down i{
      
         align-items: center; /* Dikeyde ortala */
         font-size: 0.8rem;
-        height: 20%;
+        height: 5%;
         margin-top: auto; /* Footer'ı en alta itmek için */
        
     }

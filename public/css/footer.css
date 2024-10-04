@@ -44,11 +44,6 @@ footer .right .up i,footer .right .down i{
 }
 
 @media (max-width: 480px) {
-    body {
-        min-height: 100vh; /* Sayfanın en az yüksekliği ekran yüksekliği kadar olsun */
-        margin: 0; /* Varsayılan margin'i kaldır */
-        padding-bottom: 80px; /* Footer yüksekliği kadar boşluk bırak */
-    }
 
     footer {
         position: fixed; /* Sayfanın en altında sabit konumda tut */

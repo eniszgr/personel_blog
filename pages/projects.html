@@ -64,7 +64,7 @@
                   </div>
                   <div class="postright">
                     <p>Bir kurumda çalışanların memnuniyet anketi projesidir. Bağlantılı veri tabanı ve istatistikleri görüntüleyebilmek için Javascriptin Canvas kütüphanesini kullandım.</p>
-                    <a href="https://github.com/eniszgr/AnketProjesi" target="_blank">Projenin kodlarını incelemek için tıklayınız.</a> 
+                    <a href="https://github.com/eniszgr/AnketProjesi" target="_blank" class="projectlink">Projenin kodlarını incelemek için tıklayınız.</a> 
                   </div>
                 </div>
 
@@ -74,7 +74,7 @@
                   </div>
                   <div class="postright">
                     <p>.Net Core MVC patterni ile Entity framework kullanarak veri tabanı bağlantılı linq sorguları olan admin girişi ve vitrin sayfası olan bir projedir. Vitrin kısmı hazır templatedir.</p>
-                    <a href="https://github.com/eniszgr/Food_Management" target="_blank">Projenin kodlarını incelemek için tıklayınız.</a> 
+                    <a href="https://github.com/eniszgr/Food_Management" target="_blank" class="projectlink">Projenin kodlarını incelemek için tıklayınız.</a> 
                   </div>
                 </div>
 
@@ -86,7 +86,7 @@
                   </div>  
                   <div class="postright">
                     <p>C# ile Windows Form yapısı kullanarak geliştirdim. Bu proje ile ilk kez veri tabanı bağlantılı bir proje geliştirmiş oldum.</p>
-                    <a href="https://github.com/eniszgr/Library-v1.2" target="_blank">Projenin kodlarını incelemek için tıklayınız.</a>
+                    <a href="https://github.com/eniszgr/Library-v1.2" target="_blank" class="projectlink">Projenin kodlarını incelemek için tıklayınız.</a>
                     
                   </div>
                 </div>
@@ -112,5 +112,19 @@
       </div>
     </footer>
     <script src="../public/js/animation.js"></script>
+    <script>
+     function checkMobileView() {
+    if (window.innerWidth <= 1000) {
+        var elements = document.getElementsByClassName('projectlink');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].innerText = 'Kodlar için tıklayınız';
+        }
+      }
+    }
+
+        window.onload = checkMobileView;
+        window.onresize = checkMobileView;
+
+    </script>
   </body>
 </html>

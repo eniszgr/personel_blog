@@ -8,8 +8,8 @@
 
 .info .wrapper {
     display: flex;
-    width: 70%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     background-color: #D1E9F6;
     border-radius: 30px;
     max-width: 800px;
@@ -21,12 +21,12 @@
     display: flex;
     width: 100%;
     height: 100%;
-
+    
 }
 
 .info .wrapper .card .left {
     z-index: 10;
-    flex: 3.5;
+    flex:5; 
     border-radius: 30px;
     background-color: white;
     display: flex;
@@ -34,15 +34,16 @@
     align-items: center;
     justify-content:flex-start;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 28px;
 }
 .info .wrapper .card .left .media {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 70%;
 }
 .info .wrapper .card .left .media img{
     border-radius: 50%;
-    width: 70%;
+    width: 100%;
     padding: 20px;
     margin: 10px 0 ;
     transition: all 0.5s ease ; 
@@ -62,9 +63,9 @@
 }
 
 .info .wrapper .card .right {
-    flex: 6;
+    flex: 5;
     background-color: #D1E9F6;
-    padding:0 25px;
+    padding:30px 25px;
 }
 .info .wrapper .card .right p , .info .wrapper .card .right h2 {
     text-indent: 20px; /* İlk satırı 20px içeride yapar */
@@ -114,7 +115,6 @@
 
 /* animation */
 
-/* Post öğeleri için sırayla görünme efekti */
 .info .wrapper .card .left {
    transition: all 1s ease;
    transform: translateX(530px);
@@ -136,3 +136,101 @@
     transition-delay: 0.5s;
  }
  
+
+/* FOR MOBILE VIEW */
+ @media (min-width: 320px) and (max-width: 480px) {
+    .info {
+        height: calc(100vh - 180px);
+    }
+    .info .wrapper {
+        height: 60%;
+    }
+    .info .wrapper .card .left {
+        flex: 6;
+
+    }
+    .info .wrapper .card .left .media {
+        width: 100%;
+        margin-top: 80px;
+        padding: 0px;
+
+    }
+    .info .wrapper .card .left .media img{
+        border-radius: 50%;
+        width: 100%;
+        padding: 0px;
+    }
+    .personalinfo p {
+       line-height: 15px;
+       margin-bottom: 4px;
+
+    }
+    .personalinfo p:nth-child(1) {
+      font-size: 13px;
+    }  
+    .personalinfo p:nth-child(2) {
+        font-size: 11px;
+      }  
+      .personalinfo p:nth-child(3) {
+        font-size: 11px;
+      }
+    
+
+    .info .wrapper .card .right {
+        padding:5 15px;
+        flex: 6;
+    }
+    .info .wrapper .card .right p , .info .wrapper .card .right h2 {
+        text-indent: 10px; /* İlk satırı 20px içeride yapar */
+    }
+    .info .wrapper .card .right h2 {
+        font-size: 0.9rem;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .info .wrapper .card .right p  {
+        font-size: 12px;
+    }
+    .info .wrapper .card .right ul {
+        font-size: 0.95rem;
+    
+    }
+    .info .wrapper .card .right ul li{
+        font-size: 12px;
+    }
+    .info .wrapper .card .right ul li::before{
+        content: "✦"; 
+        margin-right: 0.35em;
+    }
+ 
+    #tech{
+        padding-left: 45px;
+        margin-bottom: 0;
+    }
+    
+    /* animation */
+
+    .info .wrapper .card .left {
+        transform: translateX(170px);
+        transform: all 1s ; /* Transformasyonu iptal et */
+    }
+   
+    .info .wrapper .card .left.active {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+    .info .wrapper .card .right {
+        transition: all 1s ease;
+        opacity: 0;
+        
+     }
+       
+     .info .wrapper .card .right.active {
+        opacity: 1;
+        transition-delay: 0.5s;
+     }
+
+
+  }
+

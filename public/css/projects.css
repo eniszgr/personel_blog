@@ -321,6 +321,9 @@
 #githubicon {
   width: 100%;
 }
+.projects .wrapper .down {
+  height: 90%;
+ }
 
 /* second layer */
 #githubinfo {

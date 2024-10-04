@@ -6,8 +6,8 @@ footer{
     background-color: #201E43;
     color: white;
     display: flex;
-    justify-content: center; /* Yatayda ortala */
-    align-items: center; /* Dikeyde ortala */
+    justify-content: center;
+    align-items: center; 
     display: flex;
 }
 
@@ -46,46 +46,46 @@ footer .right .up i,footer .right .down i{
 @media (max-width: 480px) {
 
     footer {
-        position: relative; /* Position relative to the parent body */
-        height: auto; /* Adjust the height */
-        padding: 10px 0; /* Add padding for better spacing */
+        position: relative; 
+        height: auto;
+        padding: 10px 0;
       }
 
     footer .left {
-        padding: 10px; /* Sol bölüm için padding */
+        padding: 10px; 
     }
 
     footer .left .icon {
-        font-size: 20px; /* İkon boyutu */
+        font-size: 20px; 
     }
 
     footer .left .text {
-        font-size: 10px; /* Metin boyutu */
+        font-size: 10px; 
     }
 
     footer .right {
         display: flex;
-        flex-direction: column; /* Dikey yerleşim */
-        align-items: flex-end; /* Sağ tarafta hizala */
+        flex-direction: column; 
+        align-items: flex-end; 
     }
 
     footer .right .up,
     footer .right .down {
         display: flex;
         align-items: center;
-        padding: 0 10px; /* İçerik aralığı */
+        padding: 0 10px; 
     }
 
     footer .right .up i,
     footer .right .down i {
-        padding-right: 5px; /* İkon ile metin arasında boşluk */
+        padding-right: 5px; 
     }
 
     footer .right .icon {
-        font-size: 15px; /* Sağ bölüm ikon boyutu */
+        font-size: 15px; 
     }
 
     footer .right .text {
-        font-size: 10px; /* Sağ bölüm metin boyutu */
+        font-size: 10px; 
     }
 }

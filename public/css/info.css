@@ -87,6 +87,7 @@
 }
 
 @media (max-width: 935px) {
+    
     .info .wrapper .card .left .media img{
         border-radius: 50%;
         width: 90%;
@@ -139,8 +140,14 @@
 
 /* FOR MOBILE VIEW */
  @media (min-width: 320px) and (max-width: 480px) {
+    body {
+        min-height: 100vh; display: flex;
+        flex-direction: column; 
+        margin: 0; 
+      }
     .info {
-        height: calc(100vh - 180px);
+        flex: 1;
+        height: auto;
     }
     .info .wrapper {
         height: 60%;
@@ -181,7 +188,7 @@
         flex: 6;
     }
     .info .wrapper .card .right p , .info .wrapper .card .right h2 {
-        text-indent: 10px; /* İlk satırı 20px içeride yapar */
+        text-indent: 10px;
     }
     .info .wrapper .card .right h2 {
         font-size: 0.9rem;
@@ -212,7 +219,7 @@
 
     .info .wrapper .card .left {
         transform: translateX(170px);
-        transform: all 1s ; /* Transformasyonu iptal et */
+        transform: all 1s ; 
     }
    
     .info .wrapper .card .left.active {

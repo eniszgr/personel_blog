@@ -46,11 +46,10 @@ footer .right .up i,footer .right .down i{
 @media (max-width: 480px) {
 
     footer {
-        font-size: 0.8rem;
-        height: 50px; /* Yükseklik belirleyin */
-        position: absolute;
-        bottom: 0px;
-    }
+        position: relative; /* Position relative to the parent body */
+        height: auto; /* Adjust the height */
+        padding: 10px 0; /* Add padding for better spacing */
+      }
 
     footer .left {
         padding: 10px; /* Sol bölüm için padding */

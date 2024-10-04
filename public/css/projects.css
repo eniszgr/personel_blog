@@ -264,8 +264,9 @@
 /* MOBILE VIEW */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
   .projects {
-    height: calc(100vh - 180px);
+    height: calc(1000px - 180px);
 }
   .projects .wrapper {
     display: flex;

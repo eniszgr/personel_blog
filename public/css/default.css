@@ -27,3 +27,18 @@ a,a:active,a:link,a::before,a::after{
 ul{
     list-style: none;
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+     height: 1000px; 
+    }
+    
+  
+  
+  
+  
+  
+  
+  
+  }

@@ -46,16 +46,10 @@ footer .right .up i,footer .right .down i{
 @media (max-width: 480px) {
 
     footer {
-        position: fixed; /* Sayfanın en altında sabit konumda tut */
-        background-color: #201E43;
-        color: white;
-        display: flex;
-        justify-content: space-between; /* Sol ve sağ içeriği birbirinden ayırır */
-        align-items: center; /* Dikeyde ortala */
         font-size: 0.8rem;
-        height: 80px; /* Yükseklik belirleyin */
-        width: 100%; /* Tam genişlik */
-        bottom: 0; /* Ekranın en altına sabitle */
+        height: 50px; /* Yükseklik belirleyin */
+        position: absolute;
+        bottom: 0px;
     }
 
     footer .left {

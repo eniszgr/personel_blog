@@ -147,7 +147,7 @@
       }
     .info {
         flex: 1;
-        height: auto;
+        height: 800px;
         margin-top:90px ;
     }
     .info .wrapper {

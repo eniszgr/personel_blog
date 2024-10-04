@@ -267,15 +267,16 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   body {
-    min-height: 100vh; /* Minimum height of the body is the full viewport height */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Use column layout to stack footer at the bottom */
-    margin: 0; /* Remove default margin */
+    flex-direction: column; 
+   
   }
 
   .projects {
     flex: 1; /* Allow the projects section to grow and fill available space */
     height: auto; /* Change to auto to let content dictate height */
+    margin-top:90px ;
   }
 
  

@@ -148,6 +148,7 @@
     .info {
         flex: 1;
         height: auto;
+        margin-top:90px ;
     }
     .info .wrapper {
         height: 60%;

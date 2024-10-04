@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: 20%;
+    height: 10%;
     bottom: 0px;
     position: absolute;
     background-color: #201E43;
@@ -44,39 +44,60 @@ footer .right .up i,footer .right .down i{
 }
 
 @media (max-width: 480px) {
-    body{height: 1500px;}
+    body {
+        min-height: 100vh; /* Sayfanın en az yüksekliği ekran yüksekliği kadar olsun */
+        margin: 0; /* Varsayılan margin'i kaldır */
+        padding-bottom: 80px; /* Footer yüksekliği kadar boşluk bırak */
+    }
+
     footer {
-        position: relative; /* Sayfa içeriğine göre konumlandır */
+        position: fixed; /* Sayfanın en altında sabit konumda tut */
         background-color: #201E43;
         color: white;
         display: flex;
         justify-content: space-between; /* Sol ve sağ içeriği birbirinden ayırır */
-     
         align-items: center; /* Dikeyde ortala */
         font-size: 0.8rem;
-        height: 5%;
-        margin-top: auto; /* Footer'ı en alta itmek için */
-       
+        height: 80px; /* Yükseklik belirleyin */
+        width: 100%; /* Tam genişlik */
+        bottom: 0; /* Ekranın en altına sabitle */
     }
 
-    footer .left .icon{
-        font-size: 20px;
-    }
-    footer .left .text{
-        font-size: 10px;
-    }
-    footer .right .icon{
-        font-size: 15px;
-        padding-right:  5px;
+    footer .left {
+        padding: 10px; /* Sol bölüm için padding */
     }
 
-    footer .right .text{
-        font-size: 10px;
-      
+    footer .left .icon {
+        font-size: 20px; /* İkon boyutu */
     }
 
-  
+    footer .left .text {
+        font-size: 10px; /* Metin boyutu */
+    }
 
-    
+    footer .right {
+        display: flex;
+        flex-direction: column; /* Dikey yerleşim */
+        align-items: flex-end; /* Sağ tarafta hizala */
+    }
 
+    footer .right .up,
+    footer .right .down {
+        display: flex;
+        align-items: center;
+        padding: 0 10px; /* İçerik aralığı */
+    }
+
+    footer .right .up i,
+    footer .right .down i {
+        padding-right: 5px; /* İkon ile metin arasında boşluk */
+    }
+
+    footer .right .icon {
+        font-size: 15px; /* Sağ bölüm ikon boyutu */
+    }
+
+    footer .right .text {
+        font-size: 10px; /* Sağ bölüm metin boyutu */
+    }
 }

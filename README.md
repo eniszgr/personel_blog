@@ -8,14 +8,14 @@
 
 ## Sayfalar
 - Kendimi tanıttığım sayfa
-- Öne Çıkan Projelerim
+- Öne çıkan projelerim
 
 ## Projeyi Localde Çalıştırın
 - Projeyi bilgisayarınıza yükleyin.
 ```bash
 git clone https://github.com/eniszgr/personel_blog
 ```
-- Visual Studio Code'a Live Server eklentisi kurup projeyi bu eklenti ile çalıştırın
+- Visual Studio Code'a Live Server eklentisi kurup projeyi bu eklenti ile çalıştırın.
 
 ## Uygulama Domain Adresi
-
+Linke ulaşmak için [Buraya](https://eniszgr.netlify.app/) tıklayınız.
